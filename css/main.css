@@ -237,6 +237,21 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.rows .colums:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+  background-color: #8a8787;
+  border-radius: 10px;
+  height: 180px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 6px 30px rgba(104, 102, 102, 0.4);
+          box-shadow: 0 6px 30px rgba(104, 102, 102, 0.4);
 }
 
 .rows .colums h6 {
@@ -306,7 +321,7 @@ nav {
 }
 
 .services .servRow .colums {
-  background-color: #E02020;
+  background-color: #e02020;
   width: 15%;
   padding: 10px;
   height: 20em;
@@ -322,6 +337,19 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 10px;
+  border-radius: 10px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.services .servRow .colums:hover {
+  -webkit-box-shadow: 0 6px 30px rgba(224, 32, 32, 0.4);
+          box-shadow: 0 6px 30px rgba(224, 32, 32, 0.4);
+  cursor: pointer;
+  -webkit-transform: scaleY(1.025);
+          transform: scaleY(1.025);
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .services .servRow .colums h5 {
@@ -381,6 +409,8 @@ nav {
 }
 
 .OurClient .client {
+  filter: gray;
+  -webkit-filter: grayscale(1);
   float: left;
   width: 250px;
   height: 150px;
@@ -399,6 +429,18 @@ nav {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 50px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.OurClient .client:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .work {
